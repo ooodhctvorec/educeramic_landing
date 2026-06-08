@@ -84,7 +84,8 @@
   .header-logo-row img{height:40px}
 }
 /* Package gallery image tuning */
-.package-card .slider-track{align-items:stretch}
-.package-card .slide{display:flex}
-.package-card .slide img{flex:0 0 100%;height:auto;aspect-ratio:1/1;object-fit:contain;object-position:center;background:#fff}
-.subhero .wide-img{object-fit:contain;background:#fff}
+.package-card .slider-track{align-items:stretch;gap:0;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+.package-card .slide{display:flex;min-width:100%;aspect-ratio:4/3;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:#efe7dc}
+.package-card .slide img{flex:0 0 100%;width:100%;height:100%;border:0;border-radius:0;object-fit:cover;object-position:center 58%;background:transparent}
+
+.package-card .slider-track::-webkit-scrollbar{display:none}
